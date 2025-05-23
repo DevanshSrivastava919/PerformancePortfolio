@@ -29,6 +29,11 @@ def resume():
     """Render the resume page."""
     return render_template('resume.html')
 
+@app.route('/career')
+def career():
+    """Render the career page."""
+    return render_template('career.html')
+
 @app.route('/download_resume')
 def download_resume():
     """Download resume PDF."""

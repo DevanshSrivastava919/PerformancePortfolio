@@ -1,0 +1,485 @@
+{% extends 'base.html' %}
+
+{% block title %}Career | Performance Engineer Portfolio{% endblock %}
+
+{% block content %}
+<!-- Career Hero Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-5 fw-bold mb-4">Career Journey</h1>
+                <p class="lead mb-4">
+                    My professional career path and achievements as a QA Automation Tester and Performance Engineer.
+                </p>
+                <a href="{{ url_for('download_resume') }}" class="btn btn-primary">
+                    <i class="fas fa-download me-2"></i>Download Complete Resume
+                </a>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0 text-center">
+                <svg class="img-fluid" width="300" height="300" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(300,300)">
+                        <path d="M187.3,-206.3C236.3,-176.9,265,-112.5,272.3,-44.4C279.7,23.7,265.7,95.4,230.6,151C195.4,206.5,139.1,246,78.9,257.3C18.7,268.7,-45.3,251.8,-97.8,219.5C-150.3,187.2,-191.2,139.3,-217.4,81.4C-243.6,23.5,-255,-44.4,-236.8,-100.8C-218.7,-157.2,-170.9,-202,-119.7,-229.6C-68.4,-257.2,-13.7,-267.5,34.9,-257.4C83.5,-247.4,138.4,-235.8,187.3,-206.3Z" fill="#0d6efd" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Professional Summary -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Professional Summary</h2>
+        <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+                <p>
+                    QA Automation Tester with 2.8+ years of experience in test automation, software quality assurance, and
+                    performance testing. Skilled in test scripting, automation frameworks, and defect tracking, with a track record
+                    of delivering high-quality, reliable, and scalable test solutions in fast-paced environments.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Professional Experience -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title mb-4">Professional Experience</h2>
+        
+        <!-- Job 1 -->
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="h4 mb-0">Performance Tester</h3>
+                    <span class="badge bg-primary">Dec 2022 - Present</span>
+                </div>
+                <h4 class="h6 text-muted mb-3">DP World - QA Automation and Performance</h4>
+                
+                <div class="mb-4">
+                    <h5 class="h6 fw-bold mb-2">Responsibilities:</h5>
+                    <ul>
+                        <li>Designed and executed Web and API test cases; automated testing using Playwright and Selenium.</li>
+                        <li>Performed Smoke, Regression, and Sanity testing; conducted performance testing with Sitespeed.io.</li>
+                        <li>Gathered NFRs, identified critical flows, designed workload models and developed test scripts.</li>
+                        <li>Identified bottlenecks, recommended optimizations, automated test pipelines in Azure DevOps.</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="h6 fw-bold mb-2">Key Achievements:</h5>
+                    <ul>
+                        <li>Completed 15+ End-to-End Performance Testing projects across Banking, E-commerce, and Financial domains.</li>
+                        <li>Successfully implemented efficient automation frameworks that reduced testing time significantly.</li>
+                        <li>Improved application performance by systematically identifying and resolving bottlenecks.</li>
+                        <li>Built robust CI/CD pipelines in Azure DevOps for continuous performance testing.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Job 2 -->
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="h4 mb-0">Python Intern</h3>
+                    <span class="badge bg-secondary">Jul 2020 - Sept 2020</span>
+                </div>
+                <h4 class="h6 text-muted mb-3">INONETICX Pvt. Ltd - Python/Django Development</h4>
+                
+                <div class="mb-4">
+                    <h5 class="h6 fw-bold mb-2">Responsibilities & Achievements:</h5>
+                    <ul>
+                        <li>Developed web applications using Django Framework and built GUI applications with PyQt.</li>
+                        <li>Gained practical experience in Python development and web application architecture.</li>
+                        <li>Collaborated with a team to build and deploy functional applications.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Skills -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Technical Skills</h2>
+        
+        <div class="row g-4 mb-5">
+            <!-- Programming Languages -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Programming</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-box bg-primary bg-opacity-10 rounded p-2 me-3">
+                                        <i class="fas fa-code text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Java</h6>
+                                        <div class="progress" style="height: 5px; width: 100%">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-box bg-primary bg-opacity-10 rounded p-2 me-3">
+                                        <i class="fab fa-python text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Python</h6>
+                                        <div class="progress" style="height: 5px; width: 100%">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-box bg-primary bg-opacity-10 rounded p-2 me-3">
+                                        <i class="fas fa-terminal text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Shell Scripting</h6>
+                                        <div class="progress" style="height: 5px; width: 100%">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Test Automation -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Test Automation</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-box bg-success bg-opacity-10 rounded p-2 me-3">
+                                        <i class="fas fa-robot text-success"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Selenium WebDriver</h6>
+                                        <div class="progress" style="height: 5px; width: 100%">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-box bg-success bg-opacity-10 rounded p-2 me-3">
+                                        <i class="fas fa-theater-masks text-success"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Playwright</h6>
+                                        <div class="progress" style="height: 5px; width: 100%">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-box bg-success bg-opacity-10 rounded p-2 me-3">
+                                        <i class="fas fa-vial text-success"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">TestNG</h6>
+                                        <div class="progress" style="height: 5px; width: 100%">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Performance Testing -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Performance Testing</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-box bg-info bg-opacity-10 rounded p-2 me-3">
+                                        <i class="fas fa-tachometer-alt text-info"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">JMeter</h6>
+                                        <div class="progress" style="height: 5px; width: 100%">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-box bg-info bg-opacity-10 rounded p-2 me-3">
+                                        <i class="fas fa-bolt text-info"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Sitespeed.io</h6>
+                                        <div class="progress" style="height: 5px; width: 100%">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-box bg-info bg-opacity-10 rounded p-2 me-3">
+                                        <i class="fas fa-chart-line text-info"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">New Relic Monitoring</h6>
+                                        <div class="progress" style="height: 5px; width: 100%">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4 mb-5">
+            <!-- API Testing -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">API & Web Testing</h3>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge bg-secondary p-2">REST Assured</span>
+                            <span class="badge bg-secondary p-2">Postman</span>
+                            <span class="badge bg-secondary p-2">API Verification</span>
+                            <span class="badge bg-secondary p-2">Schema Validation</span>
+                            <span class="badge bg-secondary p-2">Authentication Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- DevOps & Cloud -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">CI/CD & Cloud</h3>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge bg-secondary p-2">Azure DevOps</span>
+                            <span class="badge bg-secondary p-2">Docker</span>
+                            <span class="badge bg-secondary p-2">Kubernetes</span>
+                            <span class="badge bg-secondary p-2">Pipeline Automation</span>
+                            <span class="badge bg-secondary p-2">Continuous Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Test Frameworks -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Framework Experience</h3>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge bg-secondary p-2">Page Object Model</span>
+                            <span class="badge bg-secondary p-2">Keyword-Driven</span>
+                            <span class="badge bg-secondary p-2">Data-Driven</span>
+                            <span class="badge bg-secondary p-2">Hybrid Frameworks</span>
+                            <span class="badge bg-secondary p-2">Test Case Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Technical Skills -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Technical Expertise</h3>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge bg-secondary p-2">SQL Query Optimization</span>
+                            <span class="badge bg-secondary p-2">DB Tuning</span>
+                            <span class="badge bg-secondary p-2">JVM Memory Leak Detection</span>
+                            <span class="badge bg-secondary p-2">GC Tuning</span>
+                            <span class="badge bg-secondary p-2">Code Refactoring</span>
+                            <span class="badge bg-secondary p-2">OOP Concepts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education & Projects -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <!-- Education -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="section-title mb-4">Education</h2>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="h5">B.Tech in Computer Science & Engineering</h3>
+                                <span class="badge bg-primary">2018-2022</span>
+                            </div>
+                            <p class="text-muted">BBD NIIT - Lucknow</p>
+                            <p>CGPA: 7.41</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="h5">12th Grade</h3>
+                                <span class="badge bg-secondary">2017</span>
+                            </div>
+                            <p class="text-muted">Little Flower School, Gorakhpur</p>
+                            <p>Percentage: 73.65%</p>
+                        </div>
+                        
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <h3 class="h5">10th Grade</h3>
+                                <span class="badge bg-secondary">2015</span>
+                            </div>
+                            <p class="text-muted">Little Flower School, Gorakhpur</p>
+                            <p>Percentage: 86.14%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projects -->
+            <div class="col-lg-6">
+                <h2 class="section-title mb-4">Projects</h2>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">A Cipher/Decipher Software</h3>
+                            <p>Developed a Python-based UI application to demonstrate different cipher algorithms.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-primary">UI Development</span>
+                                <span class="badge bg-primary">Cryptography</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="h5 mb-3">Shortest Path Finder in Maze</h3>
+                            <p>Used OpenCV to convert maze images into 2D matrices and implemented BFS for pathfinding.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">OpenCV</span>
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-primary">Algorithms</span>
+                                <span class="badge bg-primary">Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications & Achievements -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Certifications & Achievements</h2>
+        
+        <div class="row g-4">
+            <!-- Certifications -->
+            <div class="col-lg-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Professional Certifications</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-certificate text-warning me-3"></i>
+                                Python and Machine Learning (Spring Boot)
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-certificate text-warning me-3"></i>
+                                Performance Testing with JMeter
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievements -->
+            <div class="col-lg-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Technical Competitions</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-trophy text-warning me-3"></i>
+                                <div>
+                                    <p class="mb-0 fw-bold">Robo-race - 1st Position</p>
+                                    <small class="text-muted">Tech Fest</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-award text-warning me-3"></i>
+                                <div>
+                                    <p class="mb-0 fw-bold">Mini-robo-war - 3rd Place</p>
+                                    <small class="text-muted">Tech Fest</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-award text-warning me-3"></i>
+                                <div>
+                                    <p class="mb-0 fw-bold">Pick-n-place - 3rd Position</p>
+                                    <small class="text-muted">Tech Fest</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-futbol text-warning me-3"></i>
+                                <div>
+                                    <p class="mb-0 fw-bold">Football</p>
+                                    <small class="text-muted">Inter-school, Regional</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-users text-warning me-3"></i>
+                                <div>
+                                    <p class="mb-0 fw-bold">Participant</p>
+                                    <small class="text-muted">E-Yantra Competition (IIT Bombay) and Technex IIT BHU Tech Fest</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+        <h2 class="h3 mb-4">Want to discuss a project or opportunity?</h2>
+        <p class="lead mb-4">I'm open to discussing new challenges and how I can help with your quality assurance needs.</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg">Get In Touch</a>
+    </div>
+</section>
+{% endblock %}
