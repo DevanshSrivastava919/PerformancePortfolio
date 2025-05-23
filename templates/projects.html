@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects | Performance Engineer Portfolio{% endblock %}
+
+{% block content %}
+<!-- Projects Hero Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h1 class="display-5 fw-bold mb-4">Projects & Case Studies</h1>
+        <p class="lead mb-0">
+            A showcase of my work in performance engineering, test automation, and web development.
+            These projects demonstrate my technical skills and problem-solving approach.
+        </p>
+    </div>
+</section>
+
+<!-- Projects Grid -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card project-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4 card-title">Automated Performance Testing Framework</h3>
+                        <p class="text-muted mb-3">Performance Engineering | JMeter, BeanShell</p>
+                        <p class="card-text">
+                            Developed a comprehensive JMeter-based framework for automating performance testing across 
+                            different environments. The framework includes parameterization, dynamic data handling, 
+                            and result analysis capabilities.
+                        </p>
+                        <h4 class="h6 mt-3">Key Features:</h4>
+                        <ul>
+                            <li>Reusable test components for quick test creation</li>
+                            <li>Dynamic data generation using BeanShell scripting</li>
+                            <li>Environment-specific configuration management</li>
+                            <li>Automated result analysis and reporting</li>
+                            <li>CI/CD integration for continuous performance testing</li>
+                        </ul>
+                        <h4 class="h6 mt-3">Outcomes:</h4>
+                        <p class="mb-0">
+                            Reduced test creation time by 60% and enabled early detection of performance issues 
+                            in the development lifecycle, resulting in faster releases with better performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card project-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4 card-title">Regression Test Automation Suite</h3>
+                        <p class="text-muted mb-3">Test Automation | Playwright, Python</p>
+                        <p class="card-text">
+                            Built an end-to-end test automation suite using Playwright and Python to streamline 
+                            regression testing across multiple products. The solution includes visual testing and 
+                            cross-browser validation capabilities.
+                        </p>
+                        <h4 class="h6 mt-3">Key Features:</h4>
+                        <ul>
+                            <li>Page Object Model architecture for maintainability</li>
+                            <li>Data-driven test execution with external data sources</li>
+                            <li>Cross-browser testing across Chrome, Firefox, and Edge</li>
+                            <li>Visual comparison testing for UI validation</li>
+                            <li>Detailed HTML reporting with screenshots and videos</li>
+                        </ul>
+                        <h4 class="h6 mt-3">Outcomes:</h4>
+                        <p class="mb-0">
+                            Achieved 70% reduction in regression testing time and improved test coverage by 40%, 
+                            leading to higher confidence in application quality before deployment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card project-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4 card-title">Performance Monitoring Dashboard</h3>
+                        <p class="text-muted mb-3">Web Development | Flask, Bootstrap</p>
+                        <p class="card-text">
+                            Created a centralized dashboard for visualizing performance test results and trends 
+                            using Flask and Bootstrap. The dashboard provides real-time insights into application 
+                            performance metrics and historical comparisons.
+                        </p>
+                        <h4 class="h6 mt-3">Key Features:</h4>
+                        <ul>
+                            <li>Interactive charts for visualizing performance trends</li>
+                            <li>Customizable dashboards for different stakeholders</li>
+                            <li>Threshold-based alerting for performance degradation</li>
+                            <li>Historical data comparison for trend analysis</li>
+                            <li>REST API for integration with CI/CD pipelines</li>
+                        </ul>
+                        <h4 class="h6 mt-3">Outcomes:</h4>
+                        <p class="mb-0">
+                            Improved visibility of performance metrics across teams and enabled data-driven 
+                            decisions about application optimization priorities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card project-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4 card-title">Test Data Generator</h3>
+                        <p class="text-muted mb-3">Tool Development | Python, Apache POI</p>
+                        <p class="card-text">
+                            Developed a test data generation tool to create realistic test data for various testing 
+                            scenarios. The tool supports multiple data formats and can generate data based on 
+                            complex business rules.
+                        </p>
+                        <h4 class="h6 mt-3">Key Features:</h4>
+                        <ul>
+                            <li>Template-based data generation for consistency</li>
+                            <li>Support for multiple output formats (CSV, Excel, JSON)</li>
+                            <li>Custom data generators for domain-specific data</li>
+                            <li>Data relationship preservation for referential integrity</li>
+                            <li>Command-line interface for automation integration</li>
+                        </ul>
+                        <h4 class="h6 mt-3">Outcomes:</h4>
+                        <p class="mb-0">
+                            Eliminated manual test data creation efforts and enabled comprehensive testing with 
+                            varied data scenarios, improving test coverage and defect detection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card project-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4 card-title">Memory Leak Detection Tool</h3>
+                        <p class="text-muted mb-3">Performance Analysis | Heap Dump Analysis, Java</p>
+                        <p class="card-text">
+                            Designed a specialized tool for automating the detection of memory leaks in Java applications 
+                            by analyzing heap dumps during performance tests. The tool provides detailed reports on 
+                            potential memory issues.
+                        </p>
+                        <h4 class="h6 mt-3">Key Features:</h4>
+                        <ul>
+                            <li>Automated heap dump collection during stress tests</li>
+                            <li>Pattern-based analysis for common memory leak patterns</li>
+                            <li>Class histogram comparison for growth detection</li>
+                            <li>Object reference chain tracking</li>
+                            <li>Detailed reporting with actionable recommendations</li>
+                        </ul>
+                        <h4 class="h6 mt-3">Outcomes:</h4>
+                        <p class="mb-0">
+                            Identified several critical memory leaks in production applications, resulting in 
+                            significant performance improvements and reduced infrastructure costs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card project-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4 card-title">Automated Task Scheduler</h3>
+                        <p class="text-muted mb-3">Productivity Tool | Python, Flask</p>
+                        <p class="card-text">
+                            Built a web-based task scheduler to automate routine testing and monitoring tasks. 
+                            The application provides a user-friendly interface for scheduling and monitoring 
+                            various types of automated jobs.
+                        </p>
+                        <h4 class="h6 mt-3">Key Features:</h4>
+                        <ul>
+                            <li>Flexible scheduling options (one-time, recurring)</li>
+                            <li>Task dependencies and sequencing</li>
+                            <li>Email notifications for task completion and failures</li>
+                            <li>Execution history and audit logs</li>
+                            <li>Resource usage throttling for parallel execution</li>
+                        </ul>
+                        <h4 class="h6 mt-3">Outcomes:</h4>
+                        <p class="mb-0">
+                            Streamlined the execution of routine tasks and reduced manual intervention, 
+                            allowing the team to focus on more value-adding activities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+        <h2 class="mb-3">Interested in collaborating on a project?</h2>
+        <p class="lead mb-4">I'm always open to discussing new projects and opportunities.</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg">Get In Touch</a>
+    </div>
+</section>
+{% endblock %}

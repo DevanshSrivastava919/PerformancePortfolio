@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Page Not Found | Performance Engineer Portfolio{% endblock %}
+
+{% block content %}
+<section class="py-5 text-center">
+    <div class="container">
+        <div class="mb-5">
+            <h1 class="display-1 fw-bold">404</h1>
+            <h2 class="mb-4">Page Not Found</h2>
+            <p class="lead mb-4">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+            <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg">
+                <i class="fas fa-home me-2"></i>Go to Homepage
+            </a>
+        </div>
+        <div class="mt-5">
+            <svg width="300" height="200" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(300,200)">
+                    <path d="M123.5,-132.6C153.4,-98,167.2,-49,171.4,3.2C175.5,55.3,170,110.7,140.1,148.7C110.2,186.7,55.1,207.3,1,207.1C-53.1,206.8,-106.2,185.7,-129.6,148.3C-153,110.8,-146.5,57,-141.4,10.6C-136.2,-35.8,-132.3,-71.7,-111.2,-105.2C-90.2,-138.8,-52.1,-170.2,-1.5,-168.9C49.1,-167.6,98.3,-133.6,123.5,-132.6Z" fill="#dc3545" />
+                </g>
+            </svg>
+        </div>
+    </div>
+</section>
+{% endblock %}

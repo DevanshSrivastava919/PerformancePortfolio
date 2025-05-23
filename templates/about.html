@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me | Performance Engineer Portfolio{% endblock %}
+
+{% block content %}
+<!-- About Hero Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold mb-4">About Me</h1>
+                <p class="lead mb-4">
+                    A performance engineer with a passion for optimizing digital experiences and ensuring software quality.
+                </p>
+                <p class="mb-4">
+                    With over 2 years of experience in the field, I specialize in performance testing, automation, and 
+                    quality assurance across various products and environments. My background at DP World has equipped me 
+                    with the skills to identify bottlenecks, optimize performance, and ensure seamless user experiences.
+                </p>
+                <div class="d-flex flex-wrap gap-3 mb-4">
+                    <a href="{{ url_for('download_resume') }}" class="btn btn-primary">
+                        <i class="fas fa-download me-2"></i>Download Resume
+                    </a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-secondary">
+                        <i class="fas fa-envelope me-2"></i>Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <svg class="img-fluid" width="500" height="400" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(300,250)">
+                        <path d="M187.3,-206.3C236.3,-176.9,265,-112.5,272.3,-44.4C279.7,23.7,265.7,95.4,230.6,151C195.4,206.5,139.1,246,78.9,257.3C18.7,268.7,-45.3,251.8,-97.8,219.5C-150.3,187.2,-191.2,139.3,-217.4,81.4C-243.6,23.5,-255,-44.4,-236.8,-100.8C-218.7,-157.2,-170.9,-202,-119.7,-229.6C-68.4,-257.2,-13.7,-267.5,34.9,-257.4C83.5,-247.4,138.4,-235.8,187.3,-206.3Z" fill="#6c757d" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Professional Journey -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title mb-5">Professional Journey</h2>
+        
+        <div class="timeline-item">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="h5 mb-1">Performance Engineer</h3>
+                    <p class="text-muted mb-2">DP World | 2021 - Present</p>
+                    <p class="mb-0">
+                        Working on performance and regression testing across different products and locations. 
+                        Responsible for identifying bottlenecks, optimizing application performance, and ensuring 
+                        consistent quality across deployments.
+                    </p>
+                    <div class="mt-3">
+                        <h4 class="h6">Key Responsibilities:</h4>
+                        <ul>
+                            <li>Designing and executing performance test strategies</li>
+                            <li>Analyzing test results and providing optimization recommendations</li>
+                            <li>Developing automation frameworks using JMeter, Selenium, and Playwright</li>
+                            <li>Collaborating with development teams to implement performance improvements</li>
+                            <li>Conducting regression testing to ensure consistent application quality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="h5 mb-1">Previous Experience</h3>
+                    <p class="text-muted mb-2">Various Roles | Before 2021</p>
+                    <p class="mb-0">
+                        Prior to specializing in performance engineering, I gained valuable experience in quality assurance and 
+                        software testing, building a strong foundation in software development lifecycle and testing methodologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Expertise -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title mb-5">Technical Expertise</h2>
+        
+        <div class="row g-4">
+            <!-- Performance Testing Tools -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Performance Testing</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>JMeter</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Load Testing</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Stress Testing</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Endurance Testing</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Scalability Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Automation Tools -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Automation Tools</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Selenium</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Playwright</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>BeanShell</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Apache POI</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>CI/CD Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other Expertise -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Additional Skills</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Heap Dump Analysis</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>New Relic Monitoring</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Web Development (Python, Flask)</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>GitHub Workflows</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Generative AI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Personal Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Professional Development</h2>
+        
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h3 class="h5 mb-3">Current Learning Focus</h3>
+                <p>
+                    I'm actively expanding my skill set in several areas to enhance my capabilities as a performance engineer:
+                </p>
+                <ul>
+                    <li>Advanced Python programming for test automation</li>
+                    <li>Flask web development for creating testing tools</li>
+                    <li>React.js for building interactive dashboards</li>
+                    <li>GitHub workflows for CI/CD implementation</li>
+                    <li>Cloud deployment platforms like Replit, Vercel, and Netlify</li>
+                </ul>
+                <p>
+                    I believe continuous learning is essential in the rapidly evolving tech landscape, and I'm committed to 
+                    staying at the forefront of performance engineering and test automation.
+                </p>
+            </div>
+            
+            <div class="col-lg-6">
+                <h3 class="h5 mb-3">Professional Activities</h3>
+                <p>
+                    Beyond my core responsibilities, I actively participate in various professional activities:
+                </p>
+                <ul>
+                    <li>Contributing to internal hackathons to solve complex business problems</li>
+                    <li>Participating in QA sessions to share knowledge and best practices</li>
+                    <li>Exploring emerging technologies like generative AI for testing innovation</li>
+                    <li>Mentoring junior team members in performance testing methodologies</li>
+                    <li>Staying updated with industry trends through conferences and webinars</li>
+                </ul>
+                <p>
+                    These activities help me maintain a holistic perspective on software quality and performance optimization.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

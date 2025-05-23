@@ -1,0 +1,132 @@
+/* Custom CSS to complement Bootstrap */
+
+/* Custom variables */
+:root {
+    --custom-primary: hsl(210, 70%, 40%);    /* Professional blue */
+    --custom-secondary: hsl(200, 50%, 85%);  /* Soft blue */
+    --custom-accent: hsl(160, 60%, 45%);     /* Mint green */
+}
+
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero section styling */
+.hero-section {
+    padding: 5rem 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Project cards styling */
+.project-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skill badges */
+.skill-badge {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* Custom section styling */
+.section-title {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--custom-accent);
+}
+
+/* Timeline styling for experience */
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: var(--bs-gray-400);
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--custom-accent);
+}
+
+/* Custom button styling */
+.btn-custom {
+    background-color: var(--custom-primary);
+    border-color: var(--custom-primary);
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: hsl(210, 70%, 35%);
+    border-color: hsl(210, 70%, 35%);
+    color: white;
+}
+
+/* Form styling */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer styling */
+.footer {
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Social icons styling */
+.social-icons .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+        padding: 3rem 0;
+    }
+    
+    .section-title {
+        margin-bottom: 1.5rem;
+    }
+}

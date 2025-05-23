@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact | Performance Engineer Portfolio{% endblock %}
+
+{% block content %}
+<!-- Contact Hero Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold mb-4">Get In Touch</h1>
+                <p class="lead mb-4">
+                    I'm always interested in hearing about new projects, opportunities, or just connecting with fellow professionals.
+                </p>
+                <p class="mb-4">
+                    Feel free to reach out using the contact form or through any of the channels below.
+                    I'll get back to you as soon as possible.
+                </p>
+                <div class="d-flex flex-wrap mb-4">
+                    <div class="me-4 mb-3">
+                        <h3 class="h6 mb-2">
+                            <i class="fas fa-envelope text-primary me-2"></i>Email
+                        </h3>
+                        <p class="mb-0">example@example.com</p>
+                    </div>
+                    <div class="me-4 mb-3">
+                        <h3 class="h6 mb-2">
+                            <i class="fab fa-linkedin text-primary me-2"></i>LinkedIn
+                        </h3>
+                        <p class="mb-0">linkedin.com/in/yourprofile</p>
+                    </div>
+                    <div class="mb-3">
+                        <h3 class="h6 mb-2">
+                            <i class="fab fa-github text-primary me-2"></i>GitHub
+                        </h3>
+                        <p class="mb-0">github.com/yourusername</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <svg class="img-fluid" width="500" height="400" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(300,250)">
+                        <path d="M154.4,-196.1C201.9,-163.7,242.7,-116.4,260.9,-58.2C279.1,0,274.7,69,242.6,118.4C210.6,167.8,150.9,197.7,88.7,216.8C26.5,235.9,-38.3,244.3,-94.7,224.7C-151.1,205.1,-199.2,157.5,-226.6,99.8C-254,42,-260.7,-25.8,-241.9,-85.6C-223.1,-145.4,-178.7,-197.3,-125.5,-227.7C-72.2,-258.1,-10.9,-267.1,42.6,-250.7C96.2,-234.3,106.9,-228.5,154.4,-196.1Z" fill="#6c757d" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4 p-md-5">
+                        <h2 class="h4 text-center mb-4">Send Me a Message</h2>
+                        
+                        <form id="contactForm" action="{{ url_for('contact') }}" method="POST" class="contact-form needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">
+                                    Please provide your name.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please provide a message.
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="h3 text-center mb-4">Frequently Asked Questions</h2>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What services do you offer?
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                I specialize in performance engineering, test automation, and quality assurance services. 
+                                This includes performance testing, identifying bottlenecks, developing automation frameworks, 
+                                and implementing continuous testing solutions. I can also help with web development projects 
+                                using Python, Flask, and frontend technologies.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Are you available for freelance or contract work?
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, I'm open to discussing freelance and contract opportunities that align with my skills 
+                                and expertise. Feel free to reach out with details about your project, and we can discuss 
+                                how I might be able to help you.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How can we collaborate on a project?
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The collaboration process typically begins with an initial consultation to understand your 
+                                needs and project requirements. We'll then define the scope, timeline, and deliverables. 
+                                Throughout the project, I maintain regular communication and provide progress updates to 
+                                ensure everything stays on track and meets your expectations.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

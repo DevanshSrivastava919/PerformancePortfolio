@@ -1,0 +1,288 @@
+{% extends 'base.html' %}
+
+{% block title %}Resume | Performance Engineer Portfolio{% endblock %}
+
+{% block content %}
+<!-- Resume Hero Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-5 fw-bold mb-4">Professional Resume</h1>
+                <p class="lead mb-4">
+                    A summary of my professional experience, skills, and qualifications as a Performance Engineer.
+                </p>
+                <a href="{{ url_for('download_resume') }}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-download me-2"></i>Download PDF Resume
+                </a>
+            </div>
+            <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                <div class="p-4 bg-white rounded-3 shadow-sm">
+                    <i class="fas fa-file-alt fa-6x text-primary mb-3"></i>
+                    <h3 class="h5">Complete Resume</h3>
+                    <p class="mb-3">Get a detailed overview of my experience and qualifications</p>
+                    <a href="{{ url_for('download_resume') }}" class="btn btn-outline-primary">
+                        <i class="fas fa-download me-2"></i>Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Content -->
+<section class="py-5">
+    <div class="container">
+        <!-- Professional Summary -->
+        <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+                <h2 class="h4 card-title mb-3">Professional Summary</h2>
+                <p>
+                    Performance Engineer with over 2 years of experience at DP World, specializing in performance testing, 
+                    test automation, and quality assurance. Proficient in tools like JMeter, Selenium, Playwright, BeanShell, 
+                    and Apache POI. Experienced in identifying performance bottlenecks, optimizing application performance, 
+                    and ensuring consistent quality across deployments. Strong analytical skills with a passion for 
+                    continuous learning and staying updated with emerging technologies.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Work Experience -->
+        <h2 class="section-title mb-4">Work Experience</h2>
+        
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h3 class="h5">Performance Engineer</h3>
+                    <span class="badge bg-primary">2021 - Present</span>
+                </div>
+                <p class="text-muted mb-3">DP World</p>
+                <p>
+                    Working on performance and regression testing across different products and locations. 
+                    Responsible for identifying bottlenecks, optimizing application performance, and ensuring 
+                    consistent quality across deployments.
+                </p>
+                <h4 class="h6 mt-3">Key Responsibilities:</h4>
+                <ul>
+                    <li>Designing and implementing performance test strategies for enterprise applications</li>
+                    <li>Developing and maintaining automated test frameworks using JMeter, BeanShell, and Playwright</li>
+                    <li>Analyzing performance test results to identify bottlenecks and recommend optimization strategies</li>
+                    <li>Collaborating with development teams to resolve performance issues and improve application efficiency</li>
+                    <li>Implementing regression testing processes to ensure consistent quality across releases</li>
+                    <li>Creating detailed reports and presenting performance findings to stakeholders</li>
+                    <li>Participating in code reviews and quality assurance sessions</li>
+                </ul>
+                <h4 class="h6 mt-3">Achievements:</h4>
+                <ul>
+                    <li>Reduced application response time by 30% through systematic performance optimization</li>
+                    <li>Automated 70% of regression testing processes, reducing testing time by 60%</li>
+                    <li>Identified and resolved critical memory leak issues in production applications</li>
+                    <li>Developed a centralized performance monitoring dashboard used by multiple teams</li>
+                    <li>Implemented CI/CD integration for continuous performance testing</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h3 class="h5">Previous Roles</h3>
+                    <span class="badge bg-secondary">Before 2021</span>
+                </div>
+                <p class="text-muted mb-3">Various Organizations</p>
+                <p>
+                    Prior to specializing in performance engineering, I worked in various quality assurance 
+                    and software testing roles, building a strong foundation in software development lifecycle 
+                    and testing methodologies.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Skills -->
+        <h2 class="section-title mb-4">Technical Skills</h2>
+        
+        <div class="row g-4 mb-5">
+            <!-- Performance Testing -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Performance Testing</h3>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">JMeter:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">Load Testing:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">Stress Testing:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">Performance Analysis:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Automation -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Automation Tools</h3>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">Selenium:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">Playwright:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">BeanShell:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">Apache POI:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Programming/Development -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Programming/Development</h3>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">Python:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">Flask:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">HTML/CSS:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="fw-bold me-2">React.js:</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Education & Certifications -->
+        <h2 class="section-title mb-4">Education & Certifications</h2>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Education</h3>
+                        <div class="mb-3">
+                            <h4 class="h6 mb-1">Bachelor's Degree in Computer Science</h4>
+                            <p class="text-muted mb-0">University Name, 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Professional Certifications</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-certificate text-warning me-2"></i>
+                                Certified Performance Test Engineer
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-certificate text-warning me-2"></i>
+                                JMeter Advanced Certification
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-certificate text-warning me-2"></i>
+                                Test Automation Professional
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Information -->
+        <h2 class="section-title mb-4">Additional Information</h2>
+        
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h3 class="h5 mb-3">Professional Development</h3>
+                <p>
+                    Currently expanding skills in:
+                </p>
+                <ul>
+                    <li>Advanced Python programming</li>
+                    <li>Web development with Flask and React.js</li>
+                    <li>CI/CD implementation with GitHub workflows</li>
+                    <li>Cloud deployment platforms (Replit, Vercel, Netlify)</li>
+                    <li>Generative AI applications in testing</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 mb-3">Languages</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <span class="fw-bold">English:</span> Professional Proficiency
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <span class="fw-bold">Spanish:</span> Conversational
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download Resume -->
+<section class="py-4 bg-light">
+    <div class="container text-center">
+        <h2 class="h4 mb-4">Need a copy for later?</h2>
+        <a href="{{ url_for('download_resume') }}" class="btn btn-primary">
+            <i class="fas fa-download me-2"></i>Download Full Resume PDF
+        </a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | Performance Engineer Portfolio{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <h1 class="display-4 fw-bold mb-4">Performance Engineer & Test Automation Specialist</h1>
+                <p class="lead text-muted mb-4">
+                    With over 2 years of experience in performance testing, test automation, and quality assurance.
+                    Passionate about optimizing application performance and delivering exceptional user experiences.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-user-circle me-2"></i>About Me
+                    </a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-secondary btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-5 mt-lg-0 text-center">
+                <svg class="img-fluid" width="400" height="400" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(300,300)">
+                        <path d="M125,-160.4C159.9,-134.1,184.6,-95.9,198.5,-52.8C212.4,-9.8,215.5,37.9,199.4,78.4C183.3,118.9,147.9,152.1,107.8,172.5C67.7,192.9,22.8,200.4,-17.4,190.7C-57.6,181,-93.1,154.2,-128.8,125.1C-164.5,96,-200.3,64.5,-214.1,24.4C-227.9,-15.6,-219.7,-64.3,-192.2,-98.5C-164.7,-132.7,-117.9,-152.4,-76.1,-175.2C-34.3,-198,-17.1,-223.8,12.1,-240.6C41.4,-257.4,82.7,-265.1,111.9,-232.2C141.1,-199.3,158.2,-125.8,125,-160.4Z" fill="#0d6efd" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="row g-4">
+            <!-- Performance Testing -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary bg-gradient p-3 rounded-3 text-white me-3">
+                                <i class="fas fa-tachometer-alt fa-2x"></i>
+                            </div>
+                            <h3 class="h5 mb-0">Performance Testing</h3>
+                        </div>
+                        <p class="card-text">Proficient in designing and executing performance tests to identify bottlenecks and improve application speed.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-secondary skill-badge">JMeter</span>
+                            <span class="badge bg-secondary skill-badge">Load Testing</span>
+                            <span class="badge bg-secondary skill-badge">Stress Testing</span>
+                            <span class="badge bg-secondary skill-badge">Scalability Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Automation -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-success bg-gradient p-3 rounded-3 text-white me-3">
+                                <i class="fas fa-robot fa-2x"></i>
+                            </div>
+                            <h3 class="h5 mb-0">Test Automation</h3>
+                        </div>
+                        <p class="card-text">Experienced in creating efficient automation frameworks and scripts for repetitive testing tasks.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-secondary skill-badge">Selenium</span>
+                            <span class="badge bg-secondary skill-badge">Playwright</span>
+                            <span class="badge bg-secondary skill-badge">BeanShell</span>
+                            <span class="badge bg-secondary skill-badge">Apache POI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Web Development -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-info bg-gradient p-3 rounded-3 text-white me-3">
+                                <i class="fas fa-code fa-2x"></i>
+                            </div>
+                            <h3 class="h5 mb-0">Web Development</h3>
+                        </div>
+                        <p class="card-text">Building skills in modern web development technologies for creating efficient applications.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-secondary skill-badge">Python</span>
+                            <span class="badge bg-secondary skill-badge">Flask</span>
+                            <span class="badge bg-secondary skill-badge">React.js</span>
+                            <span class="badge bg-secondary skill-badge">GitHub Workflows</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="section-title mb-0">Featured Projects</h2>
+            <a href="{{ url_for('projects') }}" class="btn btn-outline-primary">View All Projects</a>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6">
+                <div class="card project-card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Automated Performance Test Framework</h3>
+                        <p class="card-text">A comprehensive JMeter-based framework for automating performance testing across different environments.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="{{ url_for('projects') }}" class="btn btn-sm btn-outline-secondary">View Details</a>
+                            </div>
+                            <small class="text-muted">JMeter, BeanShell</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="col-md-6">
+                <div class="card project-card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Regression Test Automation Suite</h3>
+                        <p class="card-text">Playwright-based automation framework for streamlining regression testing across multiple products.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="{{ url_for('projects') }}" class="btn btn-sm btn-outline-secondary">View Details</a>
+                            </div>
+                            <small class="text-muted">Playwright, Python</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">Interested in working together?</h2>
+        <p class="lead mb-4">I'm always open to discussing new projects, collaborations, or opportunities.</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg px-4 py-2">Get In Touch</a>
+    </div>
+</section>
+{% endblock %}
