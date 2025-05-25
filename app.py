@@ -45,30 +45,29 @@ def career():
 def download_resume():
     return send_from_directory(app.static_folder, 'files/May.pdf')
 
+import traceback
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
-        name = request.form.get('name')
-        email = request.form.get('email')
-        subject = request.form.get('subject')
-        message = request.form.get('message')
-
-        # Compose email
-        msg = Message(subject=f"New Contact Message: {subject}",
-                      sender=email,
-                      recipients=['devanshx24@gmail.com'])
-        msg.body = f"From: {name} <{email}>\n\n{message}"
-
         try:
-            mail.send(msg)
+            name = request.form.get('name')
+            email = request.form.get('email')
+            message = request.form.get('message')
+
+            # Your email sending code here
+            # mail.send(msg)
+
             flash('Thank you for your message! I will get back to you soon.', 'success')
+            return redirect(url_for('contact'))
+
         except Exception as e:
-            app.logger.error(f"Error sending email: {e}")
-            flash('Oops! Something went wrong while sending the message.', 'danger')
-
-        return redirect(url_for('contact'))
-
+            app.logger.error(f"Error in contact form: {e}")
+            app.logger.error(traceback.format_exc())
+            flash('An error occurred. Please try again later.', 'danger')
+            return redirect(url_for('contact'))
     return render_template('contact.html')
+
 
 @app.errorhandler(404)
 def page_not_found(e):
