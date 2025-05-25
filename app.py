@@ -1,6 +1,19 @@
 
 from flask_mail import Mail, Message
 
+
+
+
+import os
+import logging
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
+
+logging.basicConfig(level=logging.DEBUG)
+
+app = Flask(__name__, template_folder='templates', static_folder='static')
+app.secret_key = os.environ.get("SESSION_SECRET", "default_secret_key_for_development")
+
+
 # Configuration
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
@@ -12,14 +25,6 @@ app.config['MAIL_DEFAULT_SENDER'] = 'devanshx24@gmail.com'   # Replace with your
 mail = Mail(app)
 
 
-import os
-import logging
-from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
-
-logging.basicConfig(level=logging.DEBUG)
-
-app = Flask(__name__, template_folder='templates', static_folder='static')
-app.secret_key = os.environ.get("SESSION_SECRET", "default_secret_key_for_development")
 
 @app.route('/')
 def index():
