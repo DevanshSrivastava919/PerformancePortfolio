@@ -1,4 +1,15 @@
 
+from flask_mail import Mail, Message
+
+# Configuration
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] = 'devanshx24@gmail.com'       # Replace with your email
+app.config['MAIL_PASSWORD'] = 'bjhkafumvhsyhqsv'          # Replace with Gmail app password
+app.config['MAIL_DEFAULT_SENDER'] = 'devanshx24@gmail.com'   # Replace with your email
+
+mail = Mail(app)
 
 
 import os
@@ -39,10 +50,24 @@ def contact():
     if request.method == 'POST':
         name = request.form.get('name')
         email = request.form.get('email')
+        subject = request.form.get('subject')
         message = request.form.get('message')
-        app.logger.info(f"Contact form submission - Name: {name}, Email: {email}, Message: {message}")
-        flash('Thank you for your message! I will get back to you soon.', 'success')
+
+        # Compose email
+        msg = Message(subject=f"New Contact Message: {subject}",
+                      sender=email,
+                      recipients=['devanshx24@gmail.com'])
+        msg.body = f"From: {name} <{email}>\n\n{message}"
+
+        try:
+            mail.send(msg)
+            flash('Thank you for your message! I will get back to you soon.', 'success')
+        except Exception as e:
+            app.logger.error(f"Error sending email: {e}")
+            flash('Oops! Something went wrong while sending the message.', 'danger')
+
         return redirect(url_for('contact'))
+
     return render_template('contact.html')
 
 @app.errorhandler(404)

@@ -3,3 +3,4 @@ gunicorn>=23.0.0
 email-validator>=2.2.0
 flask-sqlalchemy>=3.1.1
 psycopg2-binary>=2.9.10
+Flask-Mail>=0.9.1
