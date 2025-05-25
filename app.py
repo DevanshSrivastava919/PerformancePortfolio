@@ -32,7 +32,7 @@ def career():
 
 @app.route('/download_resume')
 def download_resume():
-    return send_from_directory(app.static_folder, 'resume.pdf')
+    return send_from_directory(app.static_folder, 'files/May.pdf')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
